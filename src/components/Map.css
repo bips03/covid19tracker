@@ -1,0 +1,53 @@
+.map {
+  height: 500px;
+  background-color: whitesmoke;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+}
+.map .leaflet-container {
+  height: 100%;
+}
+
+.map:hover{
+  animation-name: example;
+  animation-duration: 0.25s;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 
+  0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.leaflet-popup-content-wrapper{
+  background:#ebf5f0 !important;
+}
+
+
+.infoflag {
+  height: 100px;
+  width: 100%;
+  background-size: cover;
+  border-radius: 8px;
+}
+.infoname{
+    margin-top: 2px;
+    font-size: 18px;
+    font-weight:bold ;
+    color : #555;
+}
+.infoflag img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.infocases,
+.inforecovered,
+.infodeath,
+.infotested{
+    font-size: 13px;
+    margin-top: 3px;
+}
+.infobox{
+    width : 140px;
+    
+}

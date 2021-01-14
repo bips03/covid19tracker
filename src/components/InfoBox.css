@@ -1,0 +1,51 @@
+.infoBox {
+  flex: 1;
+  cursor: pointer;
+}
+.infoBox:hover {
+  animation-name: example;
+  animation-duration: 0.25s;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.infoBox:not(:last-child) {
+  margin-right: 17px;
+}
+.infoBox__isBlue {
+  border-top: 8px solid #1f75fe;
+}
+.infoBox__isBlue:hover{
+    border-top : 8px solid #1f75fe !important; 
+}
+.infoBox__isGreen {
+  border-top: 8px solid #228B22;
+}
+.infoBox__isGreen:hover {
+  border-top: 8px solid #228B22 !important;
+}
+.infoBox__isRed {
+  border-top: 8px solid #DC143C;
+}
+.infoBox__isRed:hover {
+  border-top: 8px solid #DC143C!important;
+}
+.infoBox__cases {
+  color: #1f75fe;
+  opacity: 0.8;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.25rem;
+}
+.infoBox__greenText{
+    color : #228B22;
+}
+.infoBox__redText{
+    color : #DC143C;
+}
+.infoBox__total {
+  color: #262335;
+  font-weight: bold !important;
+  font-size: 0.8rem !important;
+  margin-top: 3px !important;
+  opacity: 0.8;
+}

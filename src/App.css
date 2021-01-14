@@ -2,9 +2,39 @@
   margin: 0;
 }
 body {
-  background-color: #dbd7d2;
+  background-color: #fbeec1;
 }
-.app{
+h3 {
+  align-items: center;
+  padding: 5px;
+  margin-left: 10px;
+  margin-top: 5px;
+  font-size: 1.25em;
+  width: 22ch;
+  font-family: monospace;
+}
+h1 {
+  width: 17ch;
+  animation: typing 2s steps(20), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+.app {
   display: flex;
   justify-content: space-evenly;
   padding: 20px;
@@ -15,16 +45,46 @@ body {
   align-items: center;
   margin-bottom: 20px;
 }
-.app__left{
-  flex : 0.9;
+.header__dropdown {
+  background-color: whitesmoke;
+  border-color: whitesmoke;
+  border-radius: 4px;
+}
+.app__left {
+  flex: 0.9;
 }
 .app__stats {
   display: flex;
   justify-content: space-between;
 }
-
-@media (max-width : 800px) {
-  .app{
+.app__right {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.app__right .MuiCard-root {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.app__right:hover {
+  animation-name: example;
+  animation-duration: 0.25s;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.app__graph {
+  flex-grow: 1;
+  padding: 10px;
+  padding-bottom: 15px;
+  max-height: max-content;
+}
+@media (max-width: 1100px) {
+  .app {
     flex-direction: column;
+  }
+  .app__graph {
+    flex-grow: 1;
+    min-height: 300px;
+    flex-shrink: 0;
   }
 }
